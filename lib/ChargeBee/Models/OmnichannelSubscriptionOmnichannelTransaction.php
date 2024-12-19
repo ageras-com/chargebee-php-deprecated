@@ -3,12 +3,9 @@
 namespace ChargeBeeDeprecated\ChargeBee\Models;
 
 use ChargeBeeDeprecated\ChargeBee\Model;
-use ChargeBeeDeprecated\ChargeBee\Request;
-use ChargeBeeDeprecated\ChargeBee\Util;
 
-class OmnichannelTransaction extends Model
+class OmnichannelSubscriptionOmnichannelTransaction extends Model
 {
-
   protected $allowed = [
     'id',
     'idAtSource',
@@ -22,11 +19,6 @@ class OmnichannelTransaction extends Model
     'resourceVersion',
   ];
 
-
-
-  # OPERATIONS
-  #-----------
-
- }
+}
 
 ?>

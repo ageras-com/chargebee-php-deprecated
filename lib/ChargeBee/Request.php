@@ -1,6 +1,6 @@
 <?php
 
-namespace ChargeBee\ChargeBee;
+namespace ChargeBeeDeprecated\ChargeBee;
 
 use Exception;
 
@@ -29,7 +29,7 @@ class Request
         }
 
         if (is_null($env)) {
-            throw new Exception("ChargeBee api environment is not set. Set your site & api key in ChargeBee\ChargeBee\Environment::configure('your_site', 'your_api_key')");
+            throw new Exception("ChargeBee api environment is not set. Set your site & api key in ChargeBeeDeprecated\ChargeBee\Environment::configure('your_site', 'your_api_key')");
         }
 
         $ser_params = Util::serialize($params);

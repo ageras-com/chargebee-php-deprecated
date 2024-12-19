@@ -1,6 +1,6 @@
 <?php
 
-namespace ChargeBee\ChargeBee;
+namespace ChargeBeeDeprecated\ChargeBee;
 
 use Exception;
 
@@ -60,7 +60,7 @@ class Model
     public function __get($k)
     {
         $childClassName = get_class($this);
-        if ($childClassName === "ChargeBee\ChargeBee\Models\Subscription" && $k === "metadata") {
+        if ($childClassName === "ChargeBeeDeprecated\ChargeBee\Models\Subscription" && $k === "metadata") {
             // Trigger a deprecation notice when accessing 'metadata' for subscription.
             trigger_error("The 'metadata' field is deprecated. Please use metaData", E_USER_WARNING);
             return null;

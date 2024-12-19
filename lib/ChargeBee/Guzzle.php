@@ -1,14 +1,14 @@
 <?php
 
 
-namespace ChargeBee\ChargeBee;
+namespace ChargeBeeDeprecated\ChargeBee;
 
-use ChargeBee\ChargeBee;
-use ChargeBee\ChargeBee\Exceptions\IOException;
-use ChargeBee\ChargeBee\Exceptions\PaymentException;
-use ChargeBee\ChargeBee\Exceptions\OperationFailedException;
-use ChargeBee\ChargeBee\Exceptions\InvalidRequestException;
-use ChargeBee\ChargeBee\Exceptions\APIError;
+use ChargeBeeDeprecated\ChargeBee;
+use ChargeBeeDeprecated\ChargeBee\Exceptions\IOException;
+use ChargeBeeDeprecated\ChargeBee\Exceptions\PaymentException;
+use ChargeBeeDeprecated\ChargeBee\Exceptions\OperationFailedException;
+use ChargeBeeDeprecated\ChargeBee\Exceptions\InvalidRequestException;
+use ChargeBeeDeprecated\ChargeBee\Exceptions\APIError;
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;

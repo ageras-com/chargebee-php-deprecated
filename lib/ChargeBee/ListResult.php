@@ -1,6 +1,6 @@
 <?php
 
-namespace ChargeBee\ChargeBee;
+namespace ChargeBeeDeprecated\ChargeBee;
 
 use Countable;
 use ArrayAccess;

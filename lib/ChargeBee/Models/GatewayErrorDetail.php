@@ -1,10 +1,10 @@
 <?php
 
-namespace ChargeBee\ChargeBee\Models;
+namespace ChargeBeeDeprecated\ChargeBee\Models;
 
-use ChargeBee\ChargeBee\Model;
-use ChargeBee\ChargeBee\Request;
-use ChargeBee\ChargeBee\Util;
+use ChargeBeeDeprecated\ChargeBee\Model;
+use ChargeBeeDeprecated\ChargeBee\Request;
+use ChargeBeeDeprecated\ChargeBee\Util;
 
 class GatewayErrorDetail extends Model
 {
@@ -23,6 +23,7 @@ class GatewayErrorDetail extends Model
     'recommendationMessage',
     'processorErrorCode',
     'processorErrorMessage',
+    'errorCauseId',
   ];
 
 

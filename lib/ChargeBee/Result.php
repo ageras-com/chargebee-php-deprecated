@@ -1,13 +1,13 @@
 <?php
 
-namespace ChargeBee\ChargeBee;
+namespace ChargeBeeDeprecated\ChargeBee;
 
-use ChargeBee\ChargeBee\Models;
-
-define('IDEMPOTENCY_REPLAY_HEADER', 'chargebee-idempotency-replayed');
+use ChargeBeeDeprecated\ChargeBee\Models;
 
 class Result
 {
+    const IDEMPOTENCY_REPLAY_HEADER = 'chargebee-idempotency-replayed';
+
     private $_response;
     private $_responseHeaders;
     private $_responseObj;
@@ -27,8 +27,8 @@ class Result
     public function isIdempotencyReplayed()
     {   
         $headers = $this->getResponseHeaders();
-        if (isset($headers[IDEMPOTENCY_REPLAY_HEADER])) {
-            $value = $headers[IDEMPOTENCY_REPLAY_HEADER][0];
+        if (isset($headers[self::IDEMPOTENCY_REPLAY_HEADER])) {
+            $value = $headers[self::IDEMPOTENCY_REPLAY_HEADER][0];
             return  boolval($value);
         }
         return false;
@@ -47,6 +47,7 @@ class Result
 			'coupons' => Models\SubscriptionCoupon::class, 
 			'shipping_address' => Models\SubscriptionShippingAddress::class, 
 			'referral_info' => Models\SubscriptionReferralInfo::class, 
+			'billing_override' => Models\SubscriptionBillingOverride::class, 
 			'contract_term' => Models\SubscriptionContractTerm::class, 
 			'discounts' => Models\SubscriptionDiscount::class
 		));
@@ -598,6 +599,12 @@ class Result
         return $differential_price;
     }
 
+    public function configuration() 
+    {
+        $configuration = $this->_get('configuration', Models\Configuration::class);
+        return $configuration;
+    }
+
     public function feature() 
     {
         $feature = $this->_get('feature', Models\Feature::class, 
@@ -875,6 +882,14 @@ class Result
         array( 
 		));
         return $downloads;
+    }
+
+    public function configurations()
+    {
+        $configurations = $this->_getList('configurations', Models\Configuration::class,
+        array( 
+		));
+        return $configurations;
     }
 
     public function inAppSubscriptions()

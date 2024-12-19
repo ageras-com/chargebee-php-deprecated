@@ -1,11 +1,11 @@
 <?php
 
-namespace ChargeBee\ChargeBee\Models;
+namespace ChargeBeeDeprecated\ChargeBee\Models;
 
-use ChargeBee\ChargeBee\Model;
-use ChargeBee\ChargeBee\Request;
-use ChargeBee\ChargeBee\Util;
-use ChargeBee\ChargeBee\Environment;
+use ChargeBeeDeprecated\ChargeBee\Model;
+use ChargeBeeDeprecated\ChargeBee\Request;
+use ChargeBeeDeprecated\ChargeBee\Util;
+use ChargeBeeDeprecated\ChargeBee\Environment;
 use Exception;
 use RuntimeException;
 

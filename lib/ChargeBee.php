@@ -1,8 +1,8 @@
 <?php
 
-namespace ChargeBee;
+namespace ChargeBeeDeprecated;
 
-use ChargeBee\ChargeBee\Environment;
+use ChargeBeeDeprecated\ChargeBee\Environment;
 
 class ChargeBee extends AbstractChargeBee
 {

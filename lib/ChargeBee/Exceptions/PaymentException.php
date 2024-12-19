@@ -1,8 +1,8 @@
 <?php
 
-namespace ChargeBee\ChargeBee\Exceptions;
+namespace ChargeBeeDeprecated\ChargeBee\Exceptions;
 
-use ChargeBee\ChargeBee\Exceptions\APIError;
+use ChargeBeeDeprecated\ChargeBee\Exceptions\APIError;
 
 class PaymentException extends APIError
 {

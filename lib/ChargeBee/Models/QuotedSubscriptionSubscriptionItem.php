@@ -1,8 +1,8 @@
 <?php
 
-namespace ChargeBee\ChargeBee\Models;
+namespace ChargeBeeDeprecated\ChargeBee\Models;
 
-use ChargeBee\ChargeBee\Model;
+use ChargeBeeDeprecated\ChargeBee\Model;
 
 class QuotedSubscriptionSubscriptionItem extends Model
 {
@@ -16,6 +16,9 @@ class QuotedSubscriptionSubscriptionItem extends Model
     'unitPrice',
     'unitPriceInDecimal',
     'amount',
+    'currentTermStart',
+    'currentTermEnd',
+    'nextBillingAt',
     'amountInDecimal',
     'billingPeriod',
     'billingPeriodUnit',
