@@ -4,13 +4,11 @@ namespace ChargeBeeDeprecated\ChargeBee\Models;
 
 use ChargeBeeDeprecated\ChargeBee\Model;
 
-class FeatureLevel extends Model
+class SubscriptionBillingOverride extends Model
 {
   protected $allowed = [
-    'name',
-    'value',
-    'level',
-    'isUnlimited',
+    'maxExcessPaymentUsage',
+    'maxRefundableCreditsUsage',
   ];
 
 }

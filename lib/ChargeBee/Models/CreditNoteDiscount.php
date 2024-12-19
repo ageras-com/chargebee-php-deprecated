@@ -1,8 +1,8 @@
 <?php
 
-namespace ChargeBee\ChargeBee\Models;
+namespace ChargeBeeDeprecated\ChargeBee\Models;
 
-use ChargeBee\ChargeBee\Model;
+use ChargeBeeDeprecated\ChargeBee\Model;
 
 class CreditNoteDiscount extends Model
 {
@@ -10,6 +10,7 @@ class CreditNoteDiscount extends Model
     'amount',
     'description',
     'entityType',
+    'discountType',
     'entityId',
     'couponSetCode',
   ];

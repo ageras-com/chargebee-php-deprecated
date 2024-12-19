@@ -1,8 +1,8 @@
 <?php
 
-namespace ChargeBee\ChargeBee\Models;
+namespace ChargeBeeDeprecated\ChargeBee\Models;
 
-use ChargeBee\ChargeBee\Model;
+use ChargeBeeDeprecated\ChargeBee\Model;
 
 class TransactionGatewayErrorDetail extends Model
 {
@@ -20,6 +20,7 @@ class TransactionGatewayErrorDetail extends Model
     'recommendationMessage',
     'processorErrorCode',
     'processorErrorMessage',
+    'errorCauseId',
   ];
 
 }

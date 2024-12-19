@@ -1,6 +1,6 @@
 <?php
 
-namespace ChargeBee;
+namespace ChargeBeeDeprecated;
 
 abstract class AbstractChargeBee
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ChargeBee\ChargeBee\Models;
+namespace ChargeBeeDeprecated\ChargeBee\Models;
 
-use ChargeBee\ChargeBee\Model;
-use ChargeBee\ChargeBee\Request;
-use ChargeBee\ChargeBee\Util;
+use ChargeBeeDeprecated\ChargeBee\Model;
+use ChargeBeeDeprecated\ChargeBee\Request;
+use ChargeBeeDeprecated\ChargeBee\Util;
 
 class Subscription extends Model
 {
@@ -75,6 +75,7 @@ class Subscription extends Model
     'coupons',
     'shippingAddress',
     'referralInfo',
+    'billingOverride',
     'invoiceNotes',
     'metaData',
     'deleted',
