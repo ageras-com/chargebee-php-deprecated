@@ -1,3 +1,10 @@
+### v3.38.1 (a manual patch) (2026-02-09)
+Manually updated certificates to support DigiCert G2 certificate chain
+https://apidocs.chargebee.com/docs/api/tls_certificate_update_g2 
+
+This version intentionally is kept as 3.38.0 in the code to not mess with the Chargebee API. 
+The tag is pushed to mark the version as 3.38.1 for the Composer to see.
+
 ### v3.38.0 (2024-12-19)
 * * * 
 
