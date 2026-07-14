@@ -1,5 +1,5 @@
 # This file is managed by Terraform. Do not edit it directly.
 # To make changes, update the configuration in https://github.com/ageras-com/tf-github
 
-* @ageras-com/pt-eng-acctcore-matchandreconcile
+* @ageras-com/pt-eng-platform-solbilling
 .github/CODEOWNERS @ageras-com/pt-eng-platform-engineeringefficiency
